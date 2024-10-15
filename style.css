@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -61,7 +61,8 @@ form button {
   border: none;
   outline: none;
   height: 100%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -72,9 +73,9 @@ form button {
   border-radius: 10px;
   border: none;
   outline: none;
-  padding: 15px;
-  font-size: 1.7rem;
-  font-weight: 700;
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  font-weight: 500;
   margin: 1rem auto 10rem;
   cursor: pointer;
   display: none;
@@ -98,4 +99,45 @@ form button {
 
 #searchResults img:hover {
   transform: scale(1.1)
+}
+.footer-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 1.4rem;
+  border-top: 1px solid #ddd;
+}
+
+.footer-content a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+@media (min-width:2000px) {
+  :root {
+    font-size: 16px;
+  }
+}
+@media (min-width:1200px) and (max-width:1800px) {
+  :root {
+    font-size: 13px;
+  }
+}
+@media (max-width:900px) {
+  :root {
+    font-size: 7px;
+  }
+}
+@media (max-width:500px) {
+  :root{
+    font-size: 4px;
+  }
 }
