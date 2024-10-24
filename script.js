@@ -1,4 +1,3 @@
-const accessKey = "43QLoVrLuM6sbyNzeL8tijb0nAmZW5bQF2LagxNyDVQ";
 const searchForm = document.getElementById("search");
 const searchInput = document.getElementById("input");
 const searchButton = document.getElementById("searchButton");
@@ -8,6 +7,7 @@ const searchResults = document.getElementById("searchResults");
 let page = 1;
 let keyword = "";
 
+import { accessKey } from './config.js';
 async function fetchData() {
   keyword = searchInput.value.trim();
   const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&per_page=12&client_id=${accessKey}`
